@@ -58,11 +58,23 @@ header > h1 {
 
 .card-nav-link {
     margin: 10px;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: rgb(91,52,144);
     color: white;
     font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: lightgray;
 }
 
 footer {
