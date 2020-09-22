@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*dark purple: rgb(91,52,144)*/
+/*med purple: gb(136, 100, 170)*/
+/*light purple: rgb(173,153,190)*/
+
+header {
+    background-color: rgb(136, 100, 170);
+    height: 200px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    color: white;
+    font-size: 4em;
+}
+
+#root1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+    margin: 20px 10px;
+}
+
+#mission-statement {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+#mission-statement > .title {
+    font-size: 2em;
+    padding: 5px;
+}
+
+#root2 {
+    border-top: rgb(136, 100, 170) solid 50px;
+    flex-grow: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-nav-link {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(91,52,144);
+    color: white;
+    font-size: 2em;
+}
+
+footer {
+    border-top: lightgrey 2px solid;
+    width: 100vw;
+}
+
+footer > h1 {
+    color: grey;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-link {
+    margin: 10px;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
