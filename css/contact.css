@@ -1,0 +1,42 @@
+#root {
+    padding: 10px 20px;
+}
+
+.infield {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid darkgray;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    box-shadow: inset 0 0 2px #999999;
+}
+
+.infield > input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.infield > span {
+    font-family: sans-serif;
+    color: darkgray;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.infield:focus-within {
+    outline-color: blue;
+    outline-style: auto;
+}
+
+.infield:focus-within > span{
+    color: blue;
+}
+
+button {
+    padding: 5px;
+    margin-top: 10px;
+}
