@@ -28,15 +28,24 @@
 }
 
 .infield:focus-within {
-    outline-color: blue;
+    outline-color: rgb(80,80,80);
     outline-style: auto;
 }
 
 .infield:focus-within > span{
-    color: blue;
+    color: rgb(80,80,80);
 }
 
 button {
     padding: 5px;
     margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:rgb(173,153,190);
+}
+
+button:active {
+    background-color: rgb(136, 100, 170);
 }
