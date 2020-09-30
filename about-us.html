@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script defer src="js/navigation.js"></script>
     <title>Women In Technology: About Us</title>
 
 </head>
@@ -11,14 +13,30 @@
 <body>
     <header>
 	    <h1>Women In Technology</h1>
+        <h2>James Madison University ACM-W Student Chapter</h2>
     </header>
 
     <main>
-        <div id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="upcoming-events.html">Upcoming Events</a>
-            <a href="meet-the-team.html">Meet the Team</a>
-            <a href="contact.html">Contact</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="about-us.html">About Us</a></li>
+                <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                <li><a href="meet-the-team.html">Meet the Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- <div class="arrows">
+                <div class="collapser">
+                    <div id="collapse" class="arrow">&#x25b6;</div>
+                </div>
+                <div class="expander">
+                    <div id="expand" class="arrow">&#x25b6;</div>
+                </div>
+            </div> -->
+        </nav>
+
+        <div id="root">
+            MAIN CONTENT
         </div>
     </main>
 

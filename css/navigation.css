@@ -1,0 +1,92 @@
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: rgb(91,52,144);
+    color: white;
+    font-size: 1.5em;
+    height: 100vh;
+    width: 200px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-links > .li {
+    padding: 15px;
+    border-right: 1px solid lightgray;
+}
+
+.nav-links > .li:hover {
+    background-color: rgb(80,80,80);
+    cursor: pointer;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+    font-size: .75em;
+}
+
+.nav-links > li > a:hover {
+    background-color: rgb(90,90,90);
+}
+
+.nav-links > li > a.current {
+    background-color: rgb(136, 100, 170);
+    font-size: 1em;
+}
+
+/* .arrows {
+    position: relative;
+}
+
+.arrow {
+    color: white;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+#collapse {
+    transform: scaleX(-1);
+}
+
+.collapser, .expander {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.collapser {
+    right: 0;
+}
+
+.expander {
+    left: 0;
+    display: none;
+}
+
+.expander:hover > .arrow, 
+.collapser:hover > .arrow {
+    color: black;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+} */
