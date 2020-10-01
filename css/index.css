@@ -28,7 +28,7 @@ nav {
     padding: 50px;
     border-top: rgb(136, 100, 170) solid 5px;
     flex-grow: 1;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,4 +55,10 @@ nav {
 
 .link:hover {
     color: lightgray;
+}
+
+@media (max-width: 600px) {
+    #logo {
+        width: 100px;
+    }
 }
