@@ -17,11 +17,15 @@
 #mission-statement {
     flex-grow: 1;
     margin: 10px;
+    padding: 5px;
 }
 
 #mission-statement > .title {
     font-size: 2em;
-    padding: 5px;
+}
+
+#mission-statement > p {
+    font-size: 1.5em;
 }
 
 nav {
@@ -40,6 +44,7 @@ nav {
     height: 400px;
     width: 300px;
     background-color: rgb(91,52,144);
+    border-radius: 10px;
     color: white;
     font-size: 2em;
     display: flex;

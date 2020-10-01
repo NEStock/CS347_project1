@@ -5,6 +5,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    flex-grow: 1;
+}
+
 header {
     background-color: rgb(136, 100, 170);
     height: 200px;
