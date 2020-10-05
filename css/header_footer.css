@@ -13,19 +13,23 @@ header {
     background-color: rgb(136, 100, 170);
     height: 200px;
     margin: 0;
+}
+
+#header-titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
 
-header > h1 {
+header > #header-titles > h1 {
     color: white;
     font-size: 4em;
     margin: 0;
 }
 
-header > h2 {
+header > #header-titles > h2 {
     color: white;
     font-size: 1.5em;
 }
@@ -64,16 +68,22 @@ footer {
     filter: invert(57%);
 }
 
+@media (max-width: 615px) {
+    header > #header-titles > h1 {
+        font-size: 3.8em;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         height: 150px;
     }
     
-    header > h1 {
-        font-size: 2em;
+    header > #header-titles > h1 {
+        font-size: 9.4vw;
     }
     
-    header > h2 {
-        font-size: 1em;
+    header > #header-titles > h2 {
+        font-size: 3.7vw;
     }
 }
