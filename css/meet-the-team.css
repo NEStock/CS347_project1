@@ -12,7 +12,8 @@ h2 {
 #picture-root {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
 }
 
@@ -27,7 +28,7 @@ h2 {
 
 figure {
     width: 180px;
-    height: 330px;
+    height: 370px;
     display: inline-block;
     font-family: sans-serif;
     background-color: rgb(173,153,190);
@@ -57,7 +58,7 @@ figure > h3 {
     }
 
     figcaption {
-        padding-left: 5px;
+        padding-left: 10px;
     }
     
 }
