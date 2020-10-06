@@ -11,7 +11,7 @@ main {
 
 header {
     background-color: rgb(136, 100, 170);
-    height: 200px;
+    height: 150px;
     margin: 0;
 }
 
@@ -75,10 +75,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-    header {
-        height: 150px;
-    }
-    
     header > #header-titles > h1 {
         font-size: 9.4vw;
     }
