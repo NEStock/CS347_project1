@@ -5,13 +5,13 @@
 #root {
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#logo {
-    width: 300px;
-    height: auto;
-    margin: 20px 10px;
+#images > img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
 }
 
 #mission-statement {
@@ -50,6 +50,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .link {
@@ -62,8 +63,54 @@ nav {
     color: lightgray;
 }
 
-@media (max-width: 600px) {
-    #logo {
-        width: 100px;
+#logo {
+    width: auto;
+    height: 60%;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+@media (max-width: 1380px) {
+    nav {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .card-nav-link {
+        height: 350px;
+        width: 262.5px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .card-nav-link {
+        height: 300px;
+        width: 225px;
+    }
+}
+
+@media (max-width: 1020px) {
+    nav {
+        padding: 50px 10px;
+    }
+    .card-nav-link {
+        height: 250px;
+        width: 187.5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .card-nav-link {
+        height: 200px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-nav-link {
+        height: 400px;
+        width: 300px;
     }
 }
