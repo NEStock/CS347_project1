@@ -4,11 +4,6 @@
     width: 100%;
 }
 
-#meet-the-team {
-    color: rgb(91,52,144);
-    margin: 15px;
-}
-
 #picture-root {
     display: flex;
     flex-direction: row;

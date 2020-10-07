@@ -1,14 +1,3 @@
-body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex-grow: 1;
-}
-
 header {
     background-color: rgb(136, 100, 170);
     height: 150px;
@@ -16,6 +5,7 @@ header {
 }
 
 #header-titles {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +23,7 @@ header > #header-titles > h1 {
 }
 
 header > #header-titles > h2 {
+    margin-top: 5px;
     color: white;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
@@ -73,18 +64,20 @@ footer {
     filter: invert(57%);
 }
 
-@media (max-width: 615px) {
+@media (max-width: 770px) {
     header > #header-titles > h1 {
-        font-size: 3.8em;
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 650px) {
+    header > #header-titles > h2 {
+        font-size: 3.7vw;
     }
 }
 
 @media (max-width: 600px) {
-    header > #header-titles > h1 {
-        font-size: 9.4vw;
-    }
-    
-    header > #header-titles > h2 {
-        font-size: 3.7vw;
+    #header-titles {
+        margin-top: 20px;
     }
 }
