@@ -1,7 +1,12 @@
+body {
+    background-color: ghostwhite;
+}
+
 main {
     margin: 0;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 nav {

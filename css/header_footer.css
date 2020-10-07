@@ -20,18 +20,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
 header > #header-titles > h1 {
     color: white;
     font-size: 4em;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 header > #header-titles > h2 {
     color: white;
     font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 footer {
