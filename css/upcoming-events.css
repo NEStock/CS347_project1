@@ -7,16 +7,37 @@
 }
 
 .event {
-    height: 200px;
+    min-height: 300px;
     border: black solid 1px;
     margin: 0 10px 10px 10px;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 10px yellow;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
 }
 
 .event:nth-child(1) {
     margin-top: 10px;
 }
+
+.event-information {
+    flex-grow: 1;
+}
+
+.event > img {
+    height: 280px;
+    width: 290px;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+@media (max-width: 950px) {
+    .event {
+        flex-direction: column;
+    }
+}
+
 
 
