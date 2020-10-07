@@ -9,17 +9,23 @@
 .event {
     min-height: 300px;
     border: black solid 1px;
-    margin: 0 10px 10px 10px;
+    margin: 0 20px 20px 20px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 10px yellow;
+    box-shadow: 5px 5px 10px darkgrey;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    position: relative;
+
 }
 
 .event:nth-child(1) {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.event:hover {
+    box-shadow: 5px 5px 10px black;
 }
 
 .event-information {
@@ -29,8 +35,13 @@
 .event > img {
     height: 280px;
     width: 290px;
+    margin: 5px;
+    object-fit: cover;
+    border: lightgrey 2px solid;
+}
+
+#jhuapl-logo {
     object-fit: contain;
-    box-sizing: border-box;
 }
 
 @media (max-width: 950px) {
