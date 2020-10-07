@@ -3,7 +3,6 @@
 /*light purple: rgb(173,153,190)*/
 
 #root {
-    margin: 0;
     display: flex;
     flex-direction: column;
 }

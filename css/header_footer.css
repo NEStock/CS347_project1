@@ -70,9 +70,14 @@ footer {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 705px) {
+    header > #header-titles > h1 {
+        font-size: 7.4vw;
+        padding-left: 5px;
+    }
     header > #header-titles > h2 {
-        font-size: 3.7vw;
+        font-size: 3.3vw;
+        padding-left: 5px;
     }
 }
 
