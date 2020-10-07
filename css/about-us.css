@@ -1,0 +1,131 @@
+#root {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#root > p, #paragraphs > p {
+    margin: 10px 15px;
+}
+
+#about-us-information {
+    display: flex;
+    flex-direction: row;
+}
+
+#acm-w-logo {
+    width: 250px;
+    height: 162px;
+    margin: 15px;
+    border: lightgrey 2px solid;
+}
+
+.sub-headings {
+    margin: 10px 15px;
+    color:rgb(136, 100, 170);
+}
+
+#event-types {
+    padding: 10px 0 20px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#cards {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card {
+    margin: 10px;
+    height: 75px;
+    width: 300px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 10px gray;
+    background-color: rgb(91,52,144);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.card > h4 {
+    margin-top: 20px;
+}
+
+.card:hover {
+    box-shadow: -10px 10px 10px black;
+    cursor: pointer;
+}
+
+.events-information {
+    display: none;
+}
+
+.events-information.open {
+    font-size: 1.1em;
+    background-color: rgb(221, 201, 241);
+    display: block;
+    flex-grow: 1;
+    margin: 20px 10px 0 0;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.events-information.open > span {
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    #event-types {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0 20px 0;
+    }
+
+    #cards {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .card {
+        width: 150px;
+        font-size: 1.7em;
+    }
+    
+    .events-information.open {
+        width: 95%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    #about-us-information {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 715px) {
+    .card {
+        height: 70px;
+        width: 125px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 630px) {
+    .card {
+        height: 70px;
+        width: 125px;
+        font-size: 1.3em;
+    }
+}

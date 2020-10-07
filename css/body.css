@@ -19,6 +19,7 @@ main {
 }
 
 .page-headings {
+    font-family: 'Montserrat', sans-serif;
     color: rgb(91,52,144);
     margin: 15px;
 }
