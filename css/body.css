@@ -23,3 +23,13 @@ main {
     color: rgb(91,52,144);
     margin: 15px;
 }
+
+.external-link {
+    color:rgb(136, 100, 170);
+    font-size: 1.1em;
+}
+
+.external-link:hover {
+    color: rgb(91,52,144);
+    font-weight: bold;
+}
