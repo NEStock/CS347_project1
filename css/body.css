@@ -20,6 +20,7 @@ main {
 
 .page-headings {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: rgb(91,52,144);
     margin: 15px;
 }
@@ -32,4 +33,12 @@ main {
 .external-link:hover {
     color: rgb(91,52,144);
     font-weight: bold;
+}
+
+.box-link {
+    box-shadow: 5px 5px 10px darkgrey;
+}
+
+.box-link:hover {
+    box-shadow: 5px 5px 10px black;
 }
