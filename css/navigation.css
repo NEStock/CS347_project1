@@ -52,6 +52,9 @@ nav {
     header {
         display: flex;
         flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
     }
 
     #header-titles {
@@ -66,16 +69,17 @@ nav {
 
     nav {
         display: none;
+    }
+
+    nav.open {
+        display: block;
+        z-index: 9999;
         position: absolute;
         top: 50px;
         right: 0;
         font-size: 1em;
         height: min-content;
-        width: 100px;
-    }
-
-    nav.open {
-        display: block;
+        width: 200px;
     }
 
     .nav-links {
