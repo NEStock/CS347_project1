@@ -25,6 +25,13 @@ main {
     margin: 15px;
 }
 
+.sub-headings {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:rgb(136, 100, 170);
+    margin: 15px;
+}
+
 .external-link {
     color:rgb(136, 100, 170);
     font-size: 1.1em;

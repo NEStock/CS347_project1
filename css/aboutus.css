@@ -3,8 +3,9 @@
     width: 100%;
 }
 
-#root > p, #paragraphs > p {
-    margin: 10px 15px;
+p {
+    margin: 15px 15px;
+    font-size: 1.2em;
 }
 
 #about-us-information {
@@ -17,11 +18,6 @@
     height: 162px;
     margin: 15px;
     border: lightgrey 2px solid;
-}
-
-.sub-headings {
-    margin: 10px 15px;
-    color:rgb(136, 100, 170);
 }
 
 #event-types {
@@ -71,7 +67,7 @@
     background-color: rgb(221, 201, 241);
     display: block;
     flex-grow: 1;
-    margin: 20px 10px 0 0;
+    margin: 20px 20px 0 0;
     padding: 10px;
     border: black 1px solid;
     border-radius: 5px;
