@@ -22,6 +22,10 @@
     width: 100%;
 }
 
+.person {
+    max-width: 100%;
+}
+
 .exec-picture > img {
     background-color: white;
     padding: 5px;
@@ -32,7 +36,7 @@
     box-shadow: -4px 4px 15px grey;
 }
 
-figure {
+.exec-picture {
     width: 220px;
     height: 280px;
     display: inline-block;
@@ -51,7 +55,7 @@ figcaption {
     left: 220px;
     padding: 15px;
     box-sizing: border-box;
-    width: 100%;
+    width: 200px;
 }
 
 figure > h3 {
@@ -59,22 +63,24 @@ figure > h3 {
     text-align: center;
 }
 
-/* @media (max-width: 600px) {
-    #picture-root {
-        flex-direction: column;
-        justify-content: flex-start;
-        max-width: 100%;
+@media (max-width: 500px) {
+    .exec-picture {
+        margin-right: 15px;
     }
-
-    figure {
-        width: 90%;
-        height: 220px;
-        display: flex;
-        flex-direction: row;
-    }
-
     figcaption {
-        padding-left: 10px;
+        width: 180px;
+        right: 0;
+        padding: 10px;
     }
-    
-} */
+}
+
+@media (max-width: 400px) {
+    figcaption {
+        width: 90vw;
+        top: 280px;
+        left: 0;
+    }
+    .exec-picture {
+        margin-bottom: 150px;
+    }
+}
