@@ -44,13 +44,18 @@ p {
     box-sizing: border-box;
     box-shadow: -10px 10px 10px gray;
     background-color: rgb(91,52,144);
-    color: white;
-    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .card > h4 {
-    margin-top: 20px;
+    height: min-content;
+    margin: 0;
+    color: white;
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -87,15 +92,8 @@ p {
     }
 
     #cards {
-        flex-direction: row;
         justify-content: center;
-        width: 100%;
         padding: 10px 0;
-    }
-
-    .card {
-        width: 150px;
-        font-size: 1.7em;
     }
     
     .events-information.open {
@@ -108,21 +106,5 @@ p {
     #about-us-information {
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (max-width: 715px) {
-    .card {
-        height: 70px;
-        width: 125px;
-        font-size: 1.3em;
-    }
-}
-
-@media (max-width: 630px) {
-    .card {
-        height: 70px;
-        width: 125px;
-        font-size: 1.3em;
     }
 }
