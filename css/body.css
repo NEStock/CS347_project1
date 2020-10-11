@@ -30,7 +30,7 @@ main {
     font-size: 1.1em;
 }
 
-.external-link:hover {
+.external-link:active {
     color: rgb(91,52,144);
     font-weight: bold;
 }
