@@ -51,6 +51,7 @@ p {
 
 .card > h4 {
     margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card:hover {
