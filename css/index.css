@@ -58,7 +58,6 @@ nav {
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -76,6 +75,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: width 1s ease-in-out;
+    transition: height 1s ease-in-out;
 }
 
 .link {
@@ -86,6 +87,7 @@ nav {
     padding: 70px 0;
     width: 100%;
     box-sizing: border-box;
+    transition: font-size 10ms ease-in-out;
 }
 
 @media (max-width: 1380px) {
