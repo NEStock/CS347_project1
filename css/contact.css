@@ -2,7 +2,12 @@
     padding: 10px 20px;
 }
 
+#contact-form, #contact-us {
+    margin-left: 30px;
+}
+
 .infield {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -37,21 +42,58 @@
 }
 
 button {
-    padding: 5px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 2px #999999;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #999999;
     background-color:rgb(173,153,190);
+    outline-color: rgb(80,80,80);
+    font-weight: 700;
+    align-self: center;
 }
 
 button:focus {
-    outline-color: rgb(80,80,80);
+    outline: black;
 }
 
-/* button:hover {
+button.clicked {
     background-color: rgb(136, 100, 170);
-} */
+}
 
-button:active {
-    background-color: rgb(136, 100, 170);
+#after-submit {
+    display: flex;
+    flex-direction: row;
+}
+
+#after-submit-message {
+    opacity: 0;
+}
+
+#after-submit-message.submitted {
+    display: block;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 100;
+    transition: opacity 1s ease-in;
+}
+
+#arrow {
+    opacity: 0;
+}
+
+#arrow.submitted {
+    display: block;
+    font-size: 3.5em;
+    margin: 0 40px;
+    opacity: 100;
+    transition: transform .5s ease, opacity 1s ease-in;
+}
+
+#arrow.bounce-right {
+    transform: translateX(20px);
+    transition: transform .5s ease, opacity 1s ease-in;
+    opacity: 100;
 }
