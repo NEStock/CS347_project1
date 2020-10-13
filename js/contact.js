@@ -4,6 +4,8 @@ const lastNameInput = document.getElementById('last-name');
 const emailInput = document.getElementById('email');
 const afterSubmitMessage = document.getElementById('after-submit-message');
 const arrow = document.getElementById('arrow');
+const notice = document.getElementById('notice');
+const closeButton = document.getElementById('close-button');
 
 function delay(millis) {
     return new Promise(resolve => setTimeout(resolve, millis));
@@ -19,6 +21,9 @@ function bounceRight() {
 }
 
 function respondToSubmit() {
+    firstNameInput.value = "";
+    lastNameInput.value = "";
+    emailInput.value = "";
     submitButton.classList.remove('clicked');
     submitButton.innerHTML = "SUBMIT";
     afterSubmitMessage.classList.add('submitted');
@@ -26,12 +31,25 @@ function respondToSubmit() {
     bounceArrow();
 }
 
-submitButton.addEventListener('click', () => {
-    submitButton.classList.add('clicked');
-    firstNameInput.value = "";
-    lastNameInput.value = "";
-    emailInput.value = "";
+function respondToSubmitError() {
+    submitButton.classList.remove('clicked');
+}
 
-    submitButton.innerHTML = "WELCOME!";
-    delay(500).then( () => respondToSubmit());
+closeButton.addEventListener('click', () => {
+    notice.style.display = 'none';
+});
+
+submitButton.addEventListener('click', () => {
+    notice.style.display = 'none';
+    afterSubmitMessage.classList.remove('submitted');
+    arrow.classList.remove('submitted');
+
+    submitButton.classList.add('clicked');
+    if (firstNameInput.value == "" || lastNameInput.value == "" || emailInput.value == "") {
+        notice.style.display = 'flex';
+        delay(300).then( () => respondToSubmitError());
+    } else {
+        submitButton.innerHTML = "WELCOME!";
+        delay(500).then( () => respondToSubmit());
+    }
 });

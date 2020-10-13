@@ -65,6 +65,7 @@ button.clicked {
 #after-submit {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 #after-submit-message {
@@ -89,11 +90,39 @@ button.clicked {
     font-size: 3.5em;
     margin: 0 40px;
     opacity: 100;
-    transition: transform .5s ease, opacity 1s ease-in;
+    transition: transform .5s ease-in, opacity 1s ease-in;
 }
 
 #arrow.bounce-right {
     transform: translateX(20px);
-    transition: transform .5s ease, opacity 1s ease-in;
+    transition: transform .5s ease-in, opacity 1s ease-in;
     opacity: 100;
+}
+
+#notice {
+    background-color: lightgray;
+    font-size: 1em;
+    font-family: sans-serif;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#close-button {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+#close-button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
