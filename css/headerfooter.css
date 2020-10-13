@@ -5,13 +5,12 @@ header {
 }
 
 #header-titles {
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
     box-sizing: border-box;
+    height: 100%;
 }
 
 header > #header-titles > h1 {
@@ -23,7 +22,7 @@ header > #header-titles > h1 {
 }
 
 header > #header-titles > h2 {
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     color: white;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
@@ -81,8 +80,17 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        height: 120px;
+    }
+
     #header-titles {
-        margin-top: 20px;
+        flex-grow: 1;
     }
 }
