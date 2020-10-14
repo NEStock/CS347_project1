@@ -37,9 +37,10 @@ main {
     font-size: 1.1em;
 }
 
-.external-link:active {
+.external-link:active, .external-link:hover {
     color: rgb(91,52,144);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .box-link {

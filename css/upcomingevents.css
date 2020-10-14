@@ -16,8 +16,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
-    z-index: -1;
 }
 
 .event:nth-child(1) {
