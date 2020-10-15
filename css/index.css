@@ -56,15 +56,12 @@ nav {
     border-top: rgb(136, 100, 170) solid 5px;
     flex-grow: 1;
     max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .card-nav-link {
     margin: 10px;
-    height: 200px;
-    width: 300px;
     background-color: rgb(91,52,144);
     border-radius: 10px;
     color: white;
@@ -75,8 +72,6 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: width 1s ease-in-out;
-    transition: height 1s ease-in-out;
 }
 
 .link {
@@ -96,27 +91,15 @@ nav {
     }
 }
 
-@media (max-width: 1320px) {
-    .card-nav-link {
-       width: 255px;
-    }
-}
-
 @media (max-width: 1140px) {
-    .card-nav-link {
-        width: 210px;
-    }
     .card-nav-link > .link {
         font-size: 1.3em;
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 940px) {
     nav {
         padding: 50px 10px;
-    }
-    .card-nav-link {
-        width: 165px;
     }
     .card-nav-link > .link {
         font-size: 1em;
@@ -130,17 +113,17 @@ nav {
 }
 
 @media (max-width: 760px) {
-    .card-nav-link {
-        width: 140px;
-        height: 180px;
-    }
     .card-nav-link > .link {
         font-size: .8em;
     }
+    .card-nav-link {
+        max-height: 150px;
+    }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 600px) {
     nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
