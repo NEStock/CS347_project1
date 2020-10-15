@@ -23,7 +23,7 @@ nav {
     border-top: none;
 }
 
-.nav-links > li:nth-child(5) {
+.nav-links > li:nth-child(6) {
     border-bottom: 1px solid lightgray;;
 }
 
@@ -81,7 +81,7 @@ nav {
         box-shadow: -2px 2px 5px grey;
     }
     
-    .nav-links > li:nth-child(5) {
+    .nav-links > li:nth-child(6) {
         border-bottom: none;
     }
 

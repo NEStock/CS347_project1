@@ -57,7 +57,7 @@ nav {
     flex-grow: 1;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .card-nav-link {
@@ -79,10 +79,15 @@ nav {
     font-size: 1.5em;
     text-decoration: none;
     text-shadow: 2px 2px 2px black;
-    padding: 70px 0;
+    padding: 70px 5px;
     width: 100%;
     box-sizing: border-box;
     transition: font-size 10ms ease-in-out;
+}
+
+#past-events > .link {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (max-width: 1380px) {
@@ -91,33 +96,45 @@ nav {
     }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1280px) {
     .card-nav-link > .link {
         font-size: 1.3em;
     }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1130px) {
+    .card-nav-link > .link {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 980px) {
     nav {
         padding: 50px 10px;
     }
     .card-nav-link > .link {
         font-size: 1em;
     }
+    .card-nav-link {
+        height: 150px;
+    }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .card-nav-link {
         margin: 10px;
+    }
+    .card-nav-link > .link {
+        font-size: .8em;
     }
 }
 
 @media (max-width: 760px) {
     .card-nav-link > .link {
-        font-size: .8em;
+        font-size: .6em;
     }
     .card-nav-link {
-        max-height: 150px;
+        margin: 5px;
     }
 }
 
