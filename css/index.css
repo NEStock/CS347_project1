@@ -52,7 +52,7 @@
 }
 
 nav {
-    padding: 50px;
+    padding: 50px 20px;
     border-top: rgb(136, 100, 170) solid 5px;
     flex-grow: 1;
     max-width: 100%;
@@ -62,91 +62,53 @@ nav {
 
 .card-nav-link {
     margin: 10px;
+    padding: 60px 10px;
     background-color: rgb(91,52,144);
     border-radius: 10px;
+    box-sizing: border-box;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.link {
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
-    text-shadow: 2px 2px 2px black;
-    padding: 70px 5px;
-    width: 100%;
-    box-sizing: border-box;
     transition: font-size 10ms ease-in-out;
 }
 
-#past-events > .link {
-    padding-left: 20px;
-    padding-right: 20px;
+#past-events {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-@media (max-width: 1380px) {
-    nav {
-        padding: 50px 20px;
-    }
-}
-
-@media (max-width: 1280px) {
-    .card-nav-link > .link {
-        font-size: 1.3em;
-    }
-}
-
-@media (max-width: 1130px) {
-    .card-nav-link > .link {
-        font-size: 1.1em;
+ @media (max-width: 1130px) {
+    .card-nav-link {
+        font-size: 2em;
     }
 }
 
 @media (max-width: 980px) {
     nav {
-        padding: 50px 10px;
-    }
-    .card-nav-link > .link {
-        font-size: 1em;
+        padding: 30px 10px;
     }
     .card-nav-link {
+        font-size: 1.5em;
         height: 150px;
     }
 }
 
-@media (max-width: 900px) {
-    .card-nav-link {
-        margin: 10px;
-    }
-    .card-nav-link > .link {
-        font-size: .8em;
-    }
-}
-
-@media (max-width: 760px) {
-    .card-nav-link > .link {
-        font-size: .6em;
-    }
-    .card-nav-link {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .card-nav-link {
-        height: 200px;
-        width: 90%;
+        height: 150px;
+        width: 80%;
         font-size: 2em;
     }
 
