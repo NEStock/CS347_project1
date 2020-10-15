@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-#images > img {
+#image > img {
     width: 100%;
     max-height: 80vh;
     object-fit: cover;
@@ -134,7 +134,17 @@ nav {
     }
 
     #mission-statement {
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;
         align-items: center;
+    }
+
+    #mission-statement-text {
+        grid-row: 1;
+    }
+
+    #logo {
+        grid-row: 2;
     }
 }
