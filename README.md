@@ -6,4 +6,4 @@
 The client I chose for Project 1 is the JMU Women In Technology organization. Women In Technology is a student group at JMU for women in STEM which promotes and encourages young women to pursue technological careers and provides a sense of community for women at JMU pursuing similar majors.
 
 ## Project Link
-[Women In Technology Site](https://nestock.github.io/CS347_project1/)
+[Women In Technology Site](https://nestock.github.io/cs347project1/)
